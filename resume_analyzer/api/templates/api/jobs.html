@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AI Resume Analyzer</title>
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>ATS Analyzer</h2>
+
+<a href="#">Dashboard</a>
+<a href="#">Resume Analyzer</a>
+<a href="#">Jobs</a>
+<a href="#">Analytics</a>
+
+</div>
+
+
+<div class="main">
+
+<h1>AI Resume Analyzer</h1>
+<div class="cards">
+
+<div class="card">
+<h3 id="totalResumes">0</h3>
+<p>Total Resumes</p>
+</div>
+
+<div class="card">
+<h3 id="bestScore">0%</h3>
+<p>Best Match Score</p>
+</div>
+
+<div class="card">
+<h3 id="jobCount">0</h3>
+<p>Jobs Available</p>
+</div>
+
+</div>
+
+<div class="uploadBox">
+
+<h2>Upload Resume</h2>
+
+<input type="file" id="resumeFile">
+
+<button onclick="uploadResume()">Analyze Resume</button>
+
+<input type="hidden" id="csrfToken" value="{{ csrf_token }}">
+
+</div>
+
+<div class="resultBox" id="result"></div>
+
+<h2>Available Jobs</h2>
+
+<ul id="jobList"></ul>
+
+</div>
+
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
