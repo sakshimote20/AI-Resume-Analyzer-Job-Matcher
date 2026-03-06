@@ -62,27 +62,27 @@ Dashboard Analytics
 
 
 ## Installation
----
+
 
 ## Clone the repository
 git clone https://github.com/sakshimote20/AI-Resume-Analyzer-Job-Matcher.git
----
+
 
 ## Navigate to the project folder
 cd resume_analyzer
 
----
+
 ## Install dependencies
 pip install -r requirements.txt
----
+
 
 ## Run database migrations
 python manage.py migrate
----
+
 
 ## Start the development server
 python manage.py runserver
----
+
 
 ## Open in browser
 http://127.0.0.1:8000
