@@ -30,7 +30,7 @@ Built using **Django, Django REST Framework, Scikit-learn, HTML/CSS, JavaScript,
 | PyMuPDF (fitz) | Resume PDF Text Extraction |
 | HTML, CSS, JavaScript | Frontend |
 | Chart.js | Analytics Visualization |
-| SQLite / MySQL | Database |
+| SQLite  | Database |
 
 ---
 
